@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="forum.css">
 
     <style>
         .container {
@@ -58,73 +59,27 @@
 </head>
 <body style="background-color: #fff1ea">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="Assets/logo.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
-          </a>
-          <strong style="font-size:20px;">AmiGo!</strong>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 16%;">
-            <ul class="navbar-nav">
-              <li class="nav-item" style="margin-right: 5px;">
-                <a class="nav-link active" aria-current="page" href="#" style="font-size: 19px;">
-                    <img src="Assets/dog.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
-                    Perros
-                </a>
-              </li>
-
-              <li class="nav-item" style="margin-right: 5px;">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="font-size: 19px;">|</a>
-              </li>
-
-              <li class="nav-item" style="margin-right: 5px;">
-                <a class="nav-link active" href="#"  style="font-size: 19px;"> 
-                    <img src="Assets/cat.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
-                    Gatos
-                </a>
-              </li>
-
-              <li class="nav-item" style="margin-right: 5px;">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="font-size: 19px;">|</a>
-              </li>
-
-              <li class="nav-item" style="margin-right: 5px;">
-                <a class="nav-link active" href="#"  style="font-size: 19px;">
-                    <img src="Assets/bird.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
-                    Aves
-                </a>
-              </li>
-
-              <li class="nav-item" style="margin-right: 5px;">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="font-size: 19px;">|</a>
-              </li>
-              
-              <li class="nav-item" style="margin-right: 5px;">
-                <a class="nav-link active" href="#"  style="font-size: 19px;">
-                    <img src="Assets/rat.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
-                    Roedores
-                </a>
-              </li>
-              <li class="nav-item" style="margin-left: 250px;">
-                <a class="nav-link active" href="#"  style="font-size: 18px;">
-                    <button>Messages 
-                        <img src="Assets/email.png" alt="" width="22" height="22" class="d-inline-block align-text-bottom">
-                    </button>
-                </a>
-              </li>
-              <li class="nav-item" style="margin-left: 90px;">
-                <a class="nav-link active" href="#">
-                    <img src="Assets/account.png" alt="" width="37" height="37" class="d-inline-block align-text-bottom">
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <div class="top-content" style="margin-top: 4%;">
+        <h3 style="margin-top: 8px;">Photo Gallery</h3>
+        <label for="check1"><a href="forum.html">All Pets</a></label>
+        <label for="check2">
+          <img src="./Assets/dog.png" alt="" width="22" height="22"> 
+          <a href="forum.html"> Dogs</a>
+        </label>
+        <label for="check3">
+          <img src="./Assets/cat.png" alt="" width="22" height="22"> 
+          <a href="forum.html"> Cats</a>
+        </label>
+        <label for="check4">
+            <img src="./Assets/bird.png" alt="" width="22" height="22">
+            <img src="./Assets/rat.png" alt="" width="22" height="22"> 
+            <a href="forum.html"> Others</a>
+        </label>
+        <label class="profile">
+            <img src="./Assets/account.png" alt="" width="19px" height="19px">
+            <a href="./userProfile.html">Profile</a>
+        </label>
+      </div>
 
       <div class="container">
         <div class="header" style="margin-top: 15%;">
@@ -163,13 +118,12 @@
           <div class="card">
             <div class="card-header" style="font-size: 18px;">
 
-              <a style="margin-left: 2%; font-family:Arial, Helvetica, sans-serif">
+              <a style="font-family:Arial, Helvetica, sans-serif;">
                 <img src="Assets/organization.png" width="21px" height="21px" class="d-inline-block align-text-bottom">
                 Organization Contact</a>
             </div>
             <div class="card-body" style="background-color: rgb(252, 252, 252)">
-              <p style="margin-top: 2%; margin-left: 8%; font-size: 16px;">
-
+              <p style="margin-top: 2%; margin-left: 8%; font-size: 16px; text-align: left;">
                 <a style=" color: rgb(29, 115, 245);">
                   Bideawee Inc. Manhattan
                 </a>
