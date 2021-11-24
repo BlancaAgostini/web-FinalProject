@@ -15,25 +15,19 @@
 </head>
 <body class="body">
 
-      <div class="top-content" style="margin-top: 4%;">
+    <div class="top-content" style="margin-top: 4%;">
         <h3 style="margin-top: 8px;">Photo Gallery</h3>
-        <label for="check1"><a href="forum.html">All Pets</a></label>
         <label for="check2">
-          <img src="./Assets/dog.png" alt="" width="22" height="22"> 
-          <a href="forum.html"> Dogs</a>
+          <img src="./Assets/forum.png" alt="" width="22" height="22"> 
+          <a href="forum.html"> Forum</a>
         </label>
-        <label for="check3">
-          <img src="./Assets/cat.png" alt="" width="22" height="22"> 
-          <a href="forum.html"> Cats</a>
-        </label>
-        <label for="check4">
-            <img src="./Assets/bird.png" alt="" width="22" height="22">
-            <img src="./Assets/rat.png" alt="" width="22" height="22"> 
-            <a href="forum.html"> Others</a>
-        </label>
-        <label class="profile">
+        <label class="profile dropdown">
             <img src="./Assets/account.png" alt="" width="19px" height="19px">
             <a href="./userProfile.html">Profile</a>
+            <div class="dropdown-content">
+                <a href="userProfile.html" style="font-size: 16px;">My profile</a>
+                <a href="postPet.html" style="font-size: 16px;">Create pet profile</a>
+            </div>
         </label>
       </div>
 
@@ -44,18 +38,18 @@
       <form style="margin-top:2%">
         <div style="margin-left: 30%; margin-right: 20%">
             <div class="form-row">
-            <div class="form-group col-md-6">
-                <a for="inputEmail4">Name</a>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Pet's name">
-            </div>
-            <div class="form-group col-md-4">
-                <a for="inputState">Gender</a>
-                <select id="inputState" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                </select>
-            </div>
+                <div class="form-group" style="width: 50%;">
+                    <a for="formGroupExampleInput2">Name</a>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Pet's name">
+                </div>
+                <div class="form-group col-md-4">
+                    <a for="inputState">Gender</a>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
             </div>
 
             <div class="form-row">
@@ -63,24 +57,44 @@
                     <a for="inputState">Breed type</a>
                     <select id="inputState" class="form-control">
                         <option selected>Choose...</option>
-                        <option>1</option>
-                        <option>2</option>
+                        <option><strong>Dogs ----------------</strong></option>
+                        <option>Bulldog</option>
+                        <option>Labrador</option>
+                        <option>Poodle</option>
+                        <option>Chihuahua</option>
+                        <option>Husky</option>
+                        <option>Pomeriano</option>
+                        <option>Cats -----------------</option>
+                        <option>Persa</option>
+                        <option>Bengala</option>
+                        <option>Esfinge</option>
+                        <option>Siames</option>
+                        <option>Ragdoll</option>
+                        <option>Munchkin</option>
+                        <option>Otro ---------</option>
                     </select>
                 </div>
                 <div class="form-group col-md-4">
                 <a for="inputState">Color</a>
                 <select id="inputState" class="form-control">
                     <option selected>Choose...</option>
-                    <option>1</option>
-                    <option>2</option>
+                    <option>Negro</option>
+                    <option>Azul</option>
+                    <option>Café</option>
+                    <option>Gris</option>
+                    <option>Verde</option>
+                    <option>Naranja</option>
+                    <option>Blanco</option>
+                    <option>Amarillo</option>
+                    <option>Otro</option>
                     </select>
                 </div>
             </div>
 
             <div class="form-row">
-                <div class="form-group col-md-6">
-                <a for="inputEmail4">Compatibility</a>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Enter your text">
+                <div class="form-group" style="width: 50%;">
+                    <a for="formGroupExampleInput2">Compatibility</a>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your text">
                 </div>
                 <div class="form-group col-md-4">
                 <a for="inputState">Vaccinated</a>
@@ -102,15 +116,6 @@
                 <input type="file" class="form-control-file" id="exampleFormControlFile1">
             </div>
             <br />
-        </div>
-
-        <div class="form-group" style="text-align: center;">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <a class="form-check-label" for="gridCheck">
-              Accept terms and conditions
-            </a>
-          </div>
         </div>
         <div style="text-align: center;"> 
             <button type="submit" class="btn btn-primary">Create pet's profile</button>
